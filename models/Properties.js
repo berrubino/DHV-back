@@ -2,7 +2,7 @@ const sequelize = requiere("sequelize");
 const db = require("../config/db");
 const bcrypt = require("bctypt");
 
-class Properties extends sequelize {}
+class Properties extends sequelize.Model {}
 
 Properties.init(
   {
