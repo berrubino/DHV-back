@@ -2,7 +2,7 @@ const sequelize = require("sequelize");
 const bcrypt = require("bcrypt");
 const db = require("../config/db");
 
-class Categories extends sequelize {}
+class Categories extends sequelize.Model {}
 
 Categories.init(
   {

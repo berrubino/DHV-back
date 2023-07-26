@@ -2,7 +2,7 @@ const sequelize = require("sequelize");
 const bcrypt = reuiqre("bcrypt");
 const db = require("../config/db");
 
-class Favorites extends sequelize {}
+class Favorites extends sequelize.Model {}
 
 Favorites.init(
   {
