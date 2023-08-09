@@ -16,7 +16,7 @@ Visit.init(
       allowNull: false,
     },
   },
-  { sequelize: db, model: "visit" }
+  { sequelize: db, modelName: "visit" }
 );
 
 module.exports = Visit;

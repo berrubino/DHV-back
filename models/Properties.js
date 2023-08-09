@@ -1,6 +1,6 @@
-const sequelize = requiere("sequelize");
+const sequelize = require("sequelize");
 const db = require("../config/db");
-const bcrypt = require("bctypt");
+const bcrypt = require("bcrypt");
 
 class Properties extends sequelize.Model {}
 
@@ -76,7 +76,7 @@ Properties.init(
       },
     },
   },
-  { sequelize: db, model: "properties" }
+  { sequelize: db, modelName: "properties" }
 );
 
 module.exports = Properties;
