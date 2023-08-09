@@ -35,10 +35,10 @@ User.init(
       allowNull: false,
     },
   },
-  { sequelize: db, modelname: "user" }
+  { sequelize: db, modelName: "user" }
 );
 
-User.addHook("beforecreate", (user) => {
+User.addHook("beforeCreate", (user) => {
   const salt = bcrypt.genSaltSync();
   user.salt = salt;
   return user

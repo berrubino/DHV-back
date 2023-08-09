@@ -1,5 +1,5 @@
 const sequelize = require("sequelize");
-const bcrypt = reuiqre("bcrypt");
+const bcrypt = require("bcrypt");
 const db = require("../config/db");
 
 class Favorites extends sequelize.Model {}
@@ -15,7 +15,7 @@ Favorites.init(
       allowNll: false,
     },
   },
-  { sequelize: db, model: "favorites" }
+  { sequelize: db, modelName: "favorites" }
 );
 
 module.exports = Favorites;
