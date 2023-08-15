@@ -6,7 +6,7 @@ class Categories extends sequelize.Model {}
 
 Categories.init(
   {
-    categorieName: {
+    categoryName: {
       type: sequelize.STRING,
       allowNull: false,
       validate: {
