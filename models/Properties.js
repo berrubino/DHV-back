@@ -28,7 +28,7 @@ Properties.init(
         notEmpty: true,
       },
     },
-    neighbohood: {
+    neighborhood: {
       type: sequelize.STRING,
       allowNull: false,
       validate: {
@@ -68,7 +68,7 @@ Properties.init(
         notEmpty: true,
       },
     },
-    images: {
+    imgs: {
       type: sequelize.ARRAY(sequelize.STRING),
       allowNull: false,
       validate: {

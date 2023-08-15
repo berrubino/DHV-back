@@ -34,6 +34,13 @@ User.init(
       type: sequelize.STRING,
       allowNull: false,
     },
+    address: { type: sequelize.STRING, require: true },
+    zip_code: { type: sequelize.INTEGER, require: true },
+    city: { type: sequelize.STRING, require: true },
+    password: { type: sequelize.STRING, require: true },
+    is_admin: { type: sequelize.BOOLEAN, defaultValue: false },
+    is_deleted: { type: sequelize.BOOLEAN, defaultValue: false },
+    salt: { type: sequelize.STRING },
   },
   { sequelize: db, modelName: "user" }
 );
